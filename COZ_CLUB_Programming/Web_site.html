@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --accent: #3b82f6;
+      --muted: #6b7280;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #ffffff 0%, #e0efff 100%);
+      padding: 24px 20px;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .brand {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand h1 {
+      font-size: 1.4rem;
+      letter-spacing: -0.03em;
+    }
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color .2s ease;
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+    .hero {
+      display: grid;
+      gap: 30px;
+      align-items: center;
+      grid-template-columns: minmax(0, 1fr);
+      padding: 60px 0;
+    }
+    .hero-copy {
+      max-width: 600px;
+    }
+    .hero-copy h2 {
+      font-size: 2.4rem;
+      margin-bottom: 18px;
+    }
+    .hero-copy p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .hero-copy .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 14px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero-image {
+      background: #dbeafe;
+      border-radius: 24px;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1e40af;
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: center;
+      padding: 24px;
+    }
+    section {
+      margin-top: 40px;
+      padding: 40px 0;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    .section-title h3 {
+      font-size: 1.35rem;
+    }
+    .card-grid {
+      display: grid;
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    }
+    .card h4 {
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+    .card p {
+      color: var(--muted);
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+    }
+    .skill {
+      background: #eff6ff;
+      color: #1e3a8a;
+      padding: 12px 16px;
+      border-radius: 14px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .contact-card {
+      display: grid;
+      gap: 16px;
+      max-width: 700px;
+    }
+    .contact-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 24px 0 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    @media (min-width: 768px) {
+      .hero {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <h1>COZ_CLUB</h1>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <p>Welcome to my portfolio</p>
+        <h2>Creative web developer building modern digital experiences.</h2>
+        <p>I design and develop websites with clean layouts, responsive interactions, and clear user-centric structure.</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+      <div class="hero-image">
+        Showcase your best projects, skills, and work with a polished portfolio page.
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title">
+        <h3>About Me</h3>
+      </div>
+      <div class="card">
+        <p>Hello! I am a developer passionate about creating elegant web solutions. I enjoy turning ideas into functional, beautiful websites that work well on any device.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <h3>Projects</h3>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <h4>Portfolio Landing Page</h4>
+          <p>A responsive personal site with a clean directional layout, showcasing projects and contact details.</p>
+        </div>
+        <div class="card">
+          <h4>Business Website</h4>
+          <p>A modern business landing page with service highlights, testimonials, and a contact section.</p>
+        </div>
+        <div class="card">
+          <h4>Interactive Dashboard</h4>
+          <p>A data-driven dashboard template with charts, cards, and an intuitive user interface.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title">
+        <h3>Skills</h3>
+      </div>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">UI/UX</div>
+        <div class="skill">Git</div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h3>Contact</h3>
+      </div>
+      <div class="contact-card card">
+        <p>Interested in working together? Send a message and I will get back to you soon.</p>
+        <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 COZ_CLUB. Built with HTML and CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>

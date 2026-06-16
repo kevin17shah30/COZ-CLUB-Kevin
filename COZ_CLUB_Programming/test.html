@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kevin Shah Portfolio</title>
+
+<style>
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior:smooth;
+}
+
+
+body{
+    background:#f5f8fc;
+    color:#222;
+}
+
+
+/* Navigation */
+
+header{
+    min-height:100vh;
+    background:linear-gradient(135deg,#b8e0ff,#ffffff);
+}
+
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 10%;
+}
+
+
+.logo{
+    font-size:32px;
+    font-weight:900;
+}
+
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+
+.nav-links a{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+
+.nav-links a:hover{
+    color:#0066ff;
+}
+
+
+/* Hero Section */
+
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:10%;
+}
+
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:15px;
+}
+
+
+.hero h2{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#333;
+}
+
+
+.hero p{
+    font-size:22px;
+    color:#555;
+    margin-bottom:35px;
+    max-width:650px;
+}
+
+
+.btn{
+    background:#0066ff;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    width:fit-content;
+    font-weight:bold;
+    transition:.3s;
+}
+
+
+.btn:hover{
+    background:#0049b7;
+    transform:translateY(-4px);
+}
+
+
+/* General Sections */
+
+section{
+    padding:80px 10%;
+}
+
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+
+/* About */
+
+.about p{
+    font-size:20px;
+    text-align:center;
+    line-height:1.7;
+}
+
+
+/* Skills */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+
+.skill-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.skill-card h3{
+    margin-bottom:15px;
+}
+
+
+/* Experience */
+
+.experience-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    max-width:800px;
+    margin:auto;
+}
+
+
+.experience-card h3{
+    color:#0066ff;
+    margin-bottom:15px;
+}
+
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+
+.contact p{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+/* Mobile Design */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+
+    .nav-links{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+
+    .hero{
+        align-items:center;
+        text-align:center;
+        padding:20px;
+    }
+
+
+    .hero h1{
+        font-size:40px;
+    }
+
+
+    .hero h2{
+        font-size:22px;
+    }
+
+
+    .hero p{
+        font-size:18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+Kevin Shah
+</div>
+
+
+<ul class="nav-links">
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#skills">Skills</a>
+</li>
+
+<li>
+<a href="#experience">Experience</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+
+</nav>
+
+
+
+<div class="hero">
+
+<h1>
+Kevin Hetalkumar Shah
+</h1>
+
+
+<h2>
+Student | Java Programmer | Aspiring Software Developer
+</h2>
+
+
+<p>
+Exploring the world of technology, one line of code at a time.
+</p>
+
+
+<a href="#contact" class="btn">
+Let's Connect
+</a>
+
+</div>
+
+
+</header>
+
+
+
+<section id="about">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+
+<div class="about">
+
+<p>
+I am Kevin Hetalkumar Shah, a passionate technology enthusiast and student at 
+ITM (SLS) Baroda University. I completed my 10th and 12th education in 
+Commerce with Computer Studies from Nalanda International School with 95%.
+
+I have a strong foundation in Java programming and I am currently expanding my 
+skills in Python, C++, HTML, CSS, and JavaScript. I enjoy learning new 
+technologies and transforming ideas into digital solutions.
+</p>
+
+</div>
+
+</section>
+
+
+
+
+<section id="skills">
+
+<h2 class="section-title">
+My Skills
+</h2>
+
+
+<div class="skills-container">
+
+
+<div class="skill-card">
+<h3>Java</h3>
+<p>Object-Oriented Programming and application development.</p>
+</div>
+
+
+<div class="skill-card">
+<h3>Python</h3>
+<p>Learning Python fundamentals and problem solving.</p>
+</div>
+
+
+<div class="skill-card">
+<h3>C++</h3>
+<p>Understanding algorithms and programming concepts.</p>
+</div>
+
+
+<div class="skill-card">
+<h3>Web Development</h3>
+<p>Creating websites using HTML, CSS and JavaScript.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="experience">
+
+<h2 class="section-title">
+Experience
+</h2>
+
+
+<div class="experience-card">
+
+<h3>
+Technology Intern - COZ CLUB
+</h3>
+
+
+<p>
+Currently working as an intern at COZ CLUB, where I am gaining 
+practical exposure to technology, learning industry tools, and 
+improving my software development skills through hands-on experience.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+<section id="contact" class="contact">
+
+
+<h2 class="section-title">
+Contact Me
+</h2>
+
+
+<p>
+📧 Email: your-email@gmail.com
+</p>
+
+
+<p>
+📍 Vadodara, Gujarat, India
+</p>
+
+
+<p>
+Let's build something amazing together!
+</p>
+
+
+</section>
+
+
+
+<footer>
+
+© 2026 Kevin Hetalkumar Shah | All Rights Reserved
+
+</footer>
+
+
+
+</body>
+
+</html>
