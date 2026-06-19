@@ -53,7 +53,7 @@
             section{
                 display: flex   ;
                 flex-wrap:wrap;
-                /* background-color: rebeccapurple; */
+                /* background-color: rebeccapurple;     */
                 background-color: white;
                 border: 2px solid #e5e7eb;
                 border-radius: 10px;
@@ -68,22 +68,44 @@
                 text-align: center;
             }
             form>div{
-                /* display: flex; */
                 /* background-color: aqua; */
                 border: 2px solid #e5e7eb;
                 border-radius: 10px;
                 box-shadow: 0px 8px 10px -2px rgba(0, 0, 0, 0.5);
-                margin: 10% 0% 10% 10%;
-                padding-left: 10px;
-                width: 100%;
-                flex-wrap: wrap;
+                margin: 5% 0% 5% 10%;
+                padding: 10px 20px 0px 10px;
+                /* flex-direction:row; */
+                width:max-content;
+                /* flex-wrap:wrap; */
             }
-            .name-in{
+            form>div>div{
+                /* background-color: pink; */
                 display: flex;
+                gap: 50px;
+                margin: 0px 0px 10px 0px;
+                
+            }
+            .field{
+                /* background-color: rgb(253, 6, 6); */
+                /* margin: 20px; */
+                /* display: flex; */
                 align-items: center;
                 gap: 5px;
             }
-            .name-in img{
+            .field-lebel{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                /* margin-bottom: 1px; */
+
+            }
+            .field input{
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #d1d5db;
+                border-radius: 10px;
+            }
+            .field img{
                 width: 20px;
                 height: auto;
             }
@@ -103,14 +125,48 @@
             <h1 class="title">Give Your Details</h1>
             <form>
                 <div>
-                    <h3 style="padding-bottom: 5%;">Personal Information</h3>
-                    <div class="name-in">
-                        <!-- <img src="Person Icon.png" alt="user icon"> -->
-                        <!-- <div> -->
-                            <img src="Person Icon.png" alt="user icon">
-                            <label for="name" style="color: grey;">Name :</label><br>
-                            <input type="text" id="name" name="name" placeholder="Enter your full name">
-                        <!-- </div> -->
+                    <h3>Personal Information</h3>
+                    <div>
+                        <div class="field">
+                            <div class="field-lebel">
+                                <img src="Person Icon.png" alt="user icon">
+                                <label for="name" style="color: grey;">Name :</label><br>
+                            </div>
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" size="30">
+                        </div>
+                        <div class="field">
+                            <div class="field-lebel">
+                                <img src="Email Icon.png" alt="email icon">
+                                <label for="email" style="color: grey;">Email :</label><br>
+                            </div>
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" size="30">
+                        </div>
+                        <div class="field">
+                            <div class="field-lebel">
+                                <img src="Mobile Icon.png" alt="mobile icon">
+                                <label for="mobile" style="color: grey;">Mobile :</label><br>
+                            </div>
+                            <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" maxlength="10" size="30">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Company Information</h3>
+                    <div>
+                        <div class="field">
+                            <div class="field-lebel">
+                                <img src="Company Icon.png" alt="company icon">
+                                <label for="company Name" style="color: grey;">Company Name:</label><br>
+                            </div>
+                            <input type="text" id="company Name" name="company Name " placeholder="Your Company Name" size="30">
+                        </div>
+                        <div class="field">
+                            <div class="field-lebel">
+                                <img src="Email Icon.png" alt="email icon">
+                                <label for="Company Email" style="color: grey;">Company Email:</label><br>
+                            </div>
+                            <input type="email" id="Company Email" name="Company Email" placeholder="Your Company Email" size="30">
+                        </div>
                     </div>
                 </div>
             </form>
