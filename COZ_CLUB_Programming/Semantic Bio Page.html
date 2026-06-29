@@ -12,7 +12,7 @@
             }
             .navigation {
                 background-image: url('ChatGPT Image Jun 20, 2026, 01_02_46 PM.png');
-                background-color: #f4f149;
+                /* background-color: #f4f149; */
                 background-size:cover;
                 height: 80vh;
                 background-repeat: no-repeat;
@@ -20,6 +20,7 @@
                 margin-bottom: 0px;
                 background-attachment: fixed;
                 /* padding: 200px; */
+                /* position: relative; */
             }
             header {
                 /* background-color: #ec0202; */
@@ -28,13 +29,13 @@
             }
             nav ul {
                 list-style-type: none;
-                padding-left: 10%;
+                padding-left: 10%;  
                 display: flex;
                 justify-content:flex-start;
                 gap: 50px;
                 /* background-color: #333; */
             }
-            nav ul li {
+             nav ul li {
                 margin: 0 15px; 
             }
             nav ul li a {
@@ -47,7 +48,67 @@
                 color: #f4f149; 
             }
             main {
+                display: flex;
+                flex-direction: column;
+                /* padding: 20px; */
+            }
+            /* .profile-image img{
+                width:auto;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 5px solid #f0f0e3;
+            }
+            .profile-image {
+                position: absolute;
+                /* top: 50%; */
+                /* left: 50%; */
+                /* transform: translateX(-50%,-50%); */
+            /* } */
+            .profile-pic {
+                width: 200px;
+                height: auto;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 5px solid #f0f0e3;
+                position: absolute;
+                transform: translateX(-50%);
+                
+            }
+            .main-card {
+                background-color: #f0f0e3;
+                margin-top: 20px;
+                padding-top: 100px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 10px;
+                /* box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1); */
+                max-width: 1200px;
+                /* display: flex; */
+                /* gap: 20px; */
+                /* text-align: center; */
+                /* margin: 20px auto; */
+            }            
+            .flex-card{
+                display:flex;
+                gap: 20px;
+            }
+            .sub-card{
+                text-align: center;
+            }
+            .larger-card {
+                display:flex;
+                gap: 20px;
+                background-color: #edede9;
                 padding: 20px;
+                }
+            .larger-card h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+            .larger-card p {
+                font-size: 16px;
+                margin-bottom: 15px;
             }
         </style>
     </head>
@@ -55,25 +116,73 @@
         <section class="navigation">
             <header>
                 <!-- <h1 style=" color: #f2b001; font-size: 50px;">My Bio</h1> -->
-            <nav>
-                <section>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </section>
-            </nav>
-            <h1 style=" color: #f2b001; font-size: 100px; margin-top: 200px;">BIOGRAPHY</h1>
+                <nav>
+                    <section>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="About_me.html" target="_blank">About</a></li>
+                            <li><a href="contact_form.html" target="_blank">Contact</a></li>
+                        </ul>
+                    </section>
+                </nav>
+                <nav>
+                    <section>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </section>
+                </nav>
+                <h1 style=" color: #f2b001; font-size: 100px; margin-top: 100px; margin-bottom: 20px;">BIOGRAPHY</h1>
+                <h2 style=" color: #f2b001; font-size: 40px;">Kevin Hetalkumar Shah</h2>
+                <h2 style=" color: #f2b001; font-size: 30px;">Welcome to my personal bio page!</h2>
+                <img src="IMG_20241225_050503_998.webp" alt="Profile Picture" class="profile-pic">
             </header>
         </section>
-            <main>
-                <section>
-                    <h2>About Me</h2>
-                    <p>This is a brief bio about myself. I am passionate about web development and enjoy creating semantic HTML pages.</p>
-                    <p>Here you can add more details about your background, interests, and experiences. You can also include links to your social media profiles or portfolio.</p>
+            <main style="display: flex; justify-content: center; align-items: center;" >
+                <!-- <section class="profile-image">
+                    <img src="IMG_20241225_050503_998.webp" alt="Profile Picture">
+                </section> -->
+                <section class="main-card">
+                    <section class="flex-card">
+                    <section class="sub-card">
+                        <img src="world-wide-web.png" alt="Web Development Logo" style="width: 60px; height: 60px; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;">
+                        <h2>Web Developing</h2>
+                        <p>I build clean, responsive websites that look great on every device and deliver fast, user-friendly experiences. I enjoy solving design and functionality challenges with HTML, CSS, and JavaScript, and I focus on writing code that is both accessible and easy to maintain.</p>
+                        <p>Whether creating landing pages, personal portfolios, or interactive features, I’m driven by the opportunity to turn ideas into polished, modern web projects that help clients stand out online.</p>
+                    </section>
+                    <section class="sub-card">
+                        <img src="api.png" alt="Software Development Logo" style="width: 60px; height: 60px; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;">
+                        <h2>Software Development</h2>
+                        <p>I design scalable software solutions with clean architecture, maintainable code, and practical problem solving at the core. I enjoy translating real-world requirements into reliable applications using modern tools, frameworks, and best practices.</p>
+                        <p>From backend services to desktop and mobile workflows, I focus on collaboration, testing, and continuous improvement to deliver software that performs well and adapts as needs evolve.</p>
+                    </section>
+                    <section class="sub-card">
+                        <img src="artificial-intellegence.png" alt="AI & ML Logo" style="width: 60px; height: 60px; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;">
+                        <h2>AI &amp; ML</h2>
+                        <p>I explore artificial intelligence and machine learning to build intelligent systems that learn from data and automate meaningful decisions. I enjoy working with models, data pipelines, and algorithmic thinking to turn insights into practical applications.</p>
+                        <p>Whether it’s predictive analytics, natural language tasks, or smart automation, I focus on creating AI solutions that enhance user experiences and drive better outcomes.</p>
+                    </section>
+                    </section>
+                    <section class="sub-card">
+                        <img src="football-field.png" alt="Sports Logo" style="width: 60px; height: 60px; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;">
+                        <h2>Sports</h2>
+                        <p>I still play football, and I have been involved in the sport since class 6th. Over the years, football has shaped my discipline, teamwork, and determination.</p>
+                        <p>The highest level I reached in football was nationals, and I play as a defender, where focus, positioning, and composure are essential to supporting the team and protecting the goal.</p>
+                    </section>
                 </section>
             </main>
-    </body>
+            <section class="larger-card">
+                <section class="sub-card">
+                <h2>Why Hire Me?</h2>
+                <p>I bring a unique blend of technical expertise, creativity, and dedication to every project. With skills spanning web development, software engineering, and AI/ML, I am equipped to handle diverse challenges and deliver innovative solutions.</p>
+                <p>My experience at the national level in football has instilled in me the values of discipline, teamwork, and resilience. These qualities directly translate to my professional work, where I collaborate effectively with teams, adapt quickly to challenges, and consistently deliver results that exceed expectations.</p>
+                <p>Whether you need a responsive website, scalable software architecture, or intelligent automation solutions, I am committed to bringing excellence, attention to detail, and a solution-oriented mindset to your project.</p>
+                </section>
+                <section class="sub-card">
+                    <h2>Client Testimonial</h2>
+                    <p>“Working with Kevin was a great experience. He delivered a polished and professional website that truly reflected our vision, and he was responsive, creative, and dependable throughout the entire process.”</p>                    <p>He took our ideas and turned them into something modern, clean, and easy to use. Every update felt thoughtful, and the final result was even better than we expected.</p>
+                    <p>What stood out most was his commitment to quality and his ability to communicate clearly from start to finish. I would absolutely recommend him to anyone looking for a reliable and talented developer.</p>                    <p><strong>— A happy client</strong></p>
+                </section>
+            </section>
     </body>
 </html>
