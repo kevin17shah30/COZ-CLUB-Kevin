@@ -108,6 +108,51 @@
                 margin: 0 auto;
                 padding:80px 20px 80px;
             }
+            .gallery-section{
+                /* background-color: blueviolet; */
+                max-width: 1300px;  
+                margin: 0 auto;
+                padding: 80px 20px;
+            }
+            .gallery-section h2{
+                color:#FFFFFF;
+                font-size: 2.5rem;
+                text-align: center;
+                /* margin-bottom: 15px; */
+            }
+            .gallery-section p{
+                color:#D1D5DB;
+                text-align: center;
+                font-size: 1rem;
+                margin-bottom: 50px;
+            }
+            .gallery{
+                /* max-width: 1300px; */
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+                gap:25px;
+                align-items: start;
+            }
+            .photo{
+                overflow:hidden;
+                border-radius:18px;
+                /* background:#1C1C1C; */
+                cursor:pointer;
+                transition:.3s ease;
+            }
+            .photo img{
+                width: 100%;
+                height: auto;
+                display: block; 
+                transition: 0.4s ease;
+            }
+            .photo:hover{
+                transform:translateY(-6px);
+                box-shadow: 0 15px 35px rgba(0,0,0,.35);
+            }
+            .photo:hover img{
+                transform:scale(1.05);
+            }
         </style>
     </head>
     <body>
@@ -130,7 +175,26 @@
                 <h1>Capture Every <span>Moment.</span></h1>
                 <p>Discover all photographs from camera shots and downloaded memories.</p>
             </section>
-            <section class="gallery">
+            <section class="gallery-section">
+                <h2>Gallery</h2>
+                <p>Browse our complete collection of memories.</p>
+                <div class="gallery">
+                    <div class="photo">
+                        <img src="Gallery Project Images\tiger-2535888_640.jpg" alt="tiger image">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Project Images\2d95e5886fc4c65a6778b5fee94a7d59.jpg" alt="image">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Project Images\pngtree-abstract-cloudy-background-beautiful-natural-streaks-of-sky-and-clouds-red-image_15684333.jpg" alt="sky image">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Project Images/41586_2015_Article_BF528452a_Figg_HTML.jpg" alt="image">
+                    </div>
+                    <div class="photo">
+                        <img src="Gallery Project Images/pngtree-stunning-red-and-blue-smoke-images-for-download-image_16191211.jpg" alt="image">
+                    </div>
+                </div>
             </section>
         </main>
     </body>
